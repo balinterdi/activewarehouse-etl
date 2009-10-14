@@ -151,3 +151,19 @@ task :reinstall => [:package] do
   `#{sudo} #{gem} uninstall #{AWETL::PKG_NAME} -x`
   `#{sudo} #{gem} install pkg/#{AWETL::PKG_NAME}-#{AWETL::PKG_VERSION}`
 end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "balinterdi-activewarehouse-etl"
+    gemspec.summary = "ActiveWarehouse ETL"
+    gemspec.description = <<-EOF
+      ActiveWarehouse ETL is a pure Ruby Extract-Transform-Load application for loading data into a database.
+    EOF
+    gemspec.email = "balint@bucionrails.com"
+    gemspec.homepage = "http://github.com/balinterdi/activewarehouse-etl"
+    gemspec.authors = ["Anthony Eden", "Balint Erdi"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
+end
