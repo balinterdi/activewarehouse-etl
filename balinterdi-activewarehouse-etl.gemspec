@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.date = %q{2009-10-14}
   s.description = %q{      ActiveWarehouse ETL is a pure Ruby Extract-Transform-Load application for loading data into a database.
 }
-  s.email = %q{balint@bucionrails.com}
+  s.email = %q{balint.erdi@gmail.com}
   s.executables = ["etl", "etl.cmd"]
   s.extra_rdoc_files = [
     "LICENSE",
@@ -29,7 +29,7 @@ Gem::Specification.new do |s|
      "TODO",
      "VERSION",
      "active_support_logger.patch",
-     "activewarehouse-etl.gemspec",
+     "balinterdi-activewarehouse-etl.gemspec",
      "bin/etl",
      "bin/etl.cmd",
      "examples/database.example.yml",
@@ -182,7 +182,7 @@ Gem::Specification.new do |s|
   s.homepage = %q{http://github.com/balinterdi/activewarehouse-etl}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.3}
+  s.rubygems_version = %q{1.3.5}
   s.summary = %q{ActiveWarehouse ETL}
   s.test_files = [
     "test/batch_test.rb",

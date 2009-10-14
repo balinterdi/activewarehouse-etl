@@ -160,7 +160,7 @@ begin
     gemspec.description = <<-EOF
       ActiveWarehouse ETL is a pure Ruby Extract-Transform-Load application for loading data into a database.
     EOF
-    gemspec.email = "balint@bucionrails.com"
+    gemspec.email = "balint.erdi@gmail.com"
     gemspec.homepage = "http://github.com/balinterdi/activewarehouse-etl"
     gemspec.authors = ["Anthony Eden", "Balint Erdi"]
   end
